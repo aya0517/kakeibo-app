@@ -1,0 +1,42 @@
+/* カレンダー全体の背景 */
+.fc {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 曜日の部分（ヘッダー）のデザイン */
+.fc-col-header-cell {
+    background-color: #bb00ff;
+    color: white;
+    font-weight: bold;
+}
+
+.fc-daygrid-day {
+    border: 1px solid rgb(139, 96, 184) !important; /* 各日付の枠線を青色に */
+}
+
+/* カレンダーの日付部分 */
+.fc-daygrid-day-number {
+    color: #333;
+    font-size: 14px;
+}
+
+/* 今日の日付のデザイン */
+.fc-day-today {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    border: 3px solid palevioletred !important;
+    border-radius: 5px;
+}
+
+/* イベント（登録した支出）デザイン */
+.fc-event {
+    background-color: #28a745 !important;
+    border: none !important;
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* イベントホバー時のデザイン */
+.fc-event:hover {
+    background-color: #218838 !important;
+}

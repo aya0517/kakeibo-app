@@ -17,26 +17,24 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <div class="header-utilities">
-                <a class="header__logo" href="/">
-                    Household Expenses
-                </a>
-                <nav>
-                    <ul class="header-nav">
-                        @if (Auth::check())
-                        <li class="header-nav__item">
-                            <a class="header-nav__link" href="/mypage">マイページ</a>
-                        </li>
-                        <li class="header-nav__item">
-                            <form class="form" action="/logout" method="post">
-                                @csrf
-                                <button class="header-nav__button">ログアウト</button>
-                            </form>
-                        </li>
-                        @endif
-                    </ul>
-                </nav>
-            </div>
+            <a class="header__logo" href="/">
+                Household Expenses
+            </a>
+            <nav>
+                <ul class="header-nav">
+                    @if (Auth::check())
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="/mypage">my page</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <form class="form" action="/logout" method="post">
+                            @csrf
+                            <button class="header-nav__button">log out</button>
+                        </form>
+                    </li>
+                    @endif
+                </ul>
+            </nav>
         </div>
     </header>
 
