@@ -1,0 +1,13 @@
+{
+  "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview",
+        "watch": "vite"
+    },
+
+  "dependencies": {
+    "fullcalendar": "^6.1.15"
+  }
+}
